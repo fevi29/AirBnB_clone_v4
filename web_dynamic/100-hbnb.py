@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Flask app to generate complete html page containing location/amenity
 dropdown menus and rental listings"""
-from flask import Flask, render_template
 from models import storage
+from flask import Flask, render_template
 import uuid
 app = Flask('web_dynamic')
 app.url_map.strict_slashes = False
